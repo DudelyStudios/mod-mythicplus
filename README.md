@@ -4,7 +4,13 @@ A Wrath 3.3.5 Mythic+ module for AzerothCore. It carries its own dungeon builder
 
 ## Install
 
-Yu'lon installs this folder as `modules/mod-mythicplus`. The folder needs `src/`, an empty `include.sh`, `conf/mod_mythicplus.conf.dist`, and the SQL under `data/sql`.
+In Yu'lon, on the Modules tab, choose **Install a module from a link** and paste:
+
+https://github.com/DudelyStudios/mod-mythicplus
+
+Yu'lon clones that repository into `modules/mod-mythicplus`. The folder ships `src/`, an empty `include.sh`, `conf/mod_mythicplus.conf.dist`, and the SQL under `data/sql`. Yu'lon applies that SQL on install. The module does nothing until the server is rebuilt.
+
+Release `v1.0.0` is the first installable version. Later releases are how Yu'lon sees an update.
 
 After install, apply:
 

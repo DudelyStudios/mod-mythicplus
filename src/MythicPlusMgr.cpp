@@ -742,7 +742,8 @@ void MythicPlusMgr::RememberBest(uint32 guidLow, uint32 mapId, uint32 levelReach
     if (previous != 0 && clearSeconds >= previous)
         return;
 
-    const std::string safeName = CharacterDatabase.EscapeString(name);
+    std::string safeName = name;
+    CharacterDatabase.EscapeString(safeName);
     std::ostringstream board;
     board << "INSERT INTO mp_leaderboard (guid, char_name, map_id, theme_id, key_level, clear_time) VALUES ("
           << guidLow << ",'" << safeName << "'," << mapId << "," << themeId << "," << keyLevel << "," << clearSeconds << ")";
