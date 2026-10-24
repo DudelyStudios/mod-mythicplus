@@ -1,0 +1,104 @@
+########################################
+# MYTHIC PLUS
+########################################
+#
+# Keyed dungeon runs for five level 80 players.
+# The first season matches the builder's 45 maps and nine themes.
+#
+
+MythicPlus.Enable = 1
+MythicPlus.Debug = 0
+MythicPlus.NpcEntry = 500100
+
+# Key floor, death penalty, and the default timer.
+MythicPlus.KeyFloor = 2
+MythicPlus.DeathPenaltySeconds = 5
+MythicPlus.TimerSeconds = 1800
+
+# Remaining-time bands. A finish inside the timer rises by 1, 2, or 3.
+MythicPlus.UpgradePercent.3 = 40
+MythicPlus.UpgradePercent.2 = 20
+
+# Enemy share of creatures this mode spawned. Zero spawned is a miss.
+MythicPlus.EnemyForcePercent = 80
+
+# Health and damage: 1.10 + 0.10 * (key level - 2), on heroic when the map has it.
+MythicPlus.Scaling.BaseMultiplier = 1.10
+MythicPlus.Scaling.PerKeyMultiplier = 0.10
+
+# Gear: 245 at key 2, plus 3 item levels for each key level above 2.
+MythicPlus.Gear.BaseItemLevel = 245
+MythicPlus.Gear.ItemLevelPerKey = 3
+
+# Score weight per best timed key level.
+MythicPlus.Score.PerKey = 10
+
+# Weekly reset. Weekday uses 0 = Sunday through 6 = Saturday. 3 = Wednesday.
+MythicPlus.ResetWeekday = 3
+MythicPlus.ResetHour = 8
+
+# First-season modifier bands. A later season may move these five.
+# A name the module does not implement is ignored.
+MythicPlus.Modifier.Fortified = 2
+MythicPlus.Modifier.Tyrannical = 4
+MythicPlus.Modifier.Raging = 7
+MythicPlus.Modifier.Bolstering = 10
+MythicPlus.Modifier.Savage = 12
+
+# Themes: "Name,creature type". -1 is the random mix.
+MythicPlus.Theme.1 = "Beast Hunt,1"
+MythicPlus.Theme.2 = "Dragon's Lair,2"
+MythicPlus.Theme.3 = "Demonic Invasion,3"
+MythicPlus.Theme.4 = "Elemental Chaos,4"
+MythicPlus.Theme.5 = "Giant's Keep,5"
+MythicPlus.Theme.6 = "Undead Rising,6"
+MythicPlus.Theme.7 = "Humanoid Stronghold,7"
+MythicPlus.Theme.8 = "Mechanical Mayhem,9"
+MythicPlus.Theme.9 = "Random Chaos,-1"
+
+# Dungeons: "mapId,Name". The first season is the builder's source list.
+MythicPlus.Dungeon.1 = "389,Ragefire Chasm"
+MythicPlus.Dungeon.2 = "36,Deadmines"
+MythicPlus.Dungeon.3 = "33,Shadowfang Keep"
+MythicPlus.Dungeon.4 = "34,The Stockade"
+MythicPlus.Dungeon.5 = "43,Wailing Caverns"
+MythicPlus.Dungeon.6 = "48,Blackfathom Deeps"
+MythicPlus.Dungeon.7 = "47,Razorfen Kraul"
+MythicPlus.Dungeon.8 = "90,Gnomeregan"
+MythicPlus.Dungeon.9 = "129,Razorfen Downs"
+MythicPlus.Dungeon.10 = "189,Scarlet Monastery"
+MythicPlus.Dungeon.11 = "70,Uldaman"
+MythicPlus.Dungeon.12 = "209,Zul'Farrak"
+MythicPlus.Dungeon.13 = "349,Maraudon"
+MythicPlus.Dungeon.14 = "109,Sunken Temple"
+MythicPlus.Dungeon.15 = "230,Blackrock Depths"
+MythicPlus.Dungeon.16 = "229,Blackrock Spire"
+MythicPlus.Dungeon.17 = "289,Scholomance"
+MythicPlus.Dungeon.18 = "329,Stratholme"
+MythicPlus.Dungeon.19 = "543,Hellfire Ramparts"
+MythicPlus.Dungeon.20 = "542,Blood Furnace"
+MythicPlus.Dungeon.21 = "547,Slave Pens"
+MythicPlus.Dungeon.22 = "546,Underbog"
+MythicPlus.Dungeon.23 = "557,Mana-Tombs"
+MythicPlus.Dungeon.24 = "558,Auchenai Crypts"
+MythicPlus.Dungeon.25 = "556,Sethekk Halls"
+MythicPlus.Dungeon.26 = "555,Shadow Labyrinth"
+MythicPlus.Dungeon.27 = "540,Shattered Halls"
+MythicPlus.Dungeon.28 = "553,Botanica"
+MythicPlus.Dungeon.29 = "554,Mechanar"
+MythicPlus.Dungeon.30 = "552,Arcatraz"
+MythicPlus.Dungeon.31 = "574,Utgarde Keep"
+MythicPlus.Dungeon.32 = "576,The Nexus"
+MythicPlus.Dungeon.33 = "601,Azjol-Nerub"
+MythicPlus.Dungeon.34 = "619,Ahn'kahet"
+MythicPlus.Dungeon.35 = "600,Drak'Tharon Keep"
+MythicPlus.Dungeon.36 = "608,Violet Hold"
+MythicPlus.Dungeon.37 = "604,Gundrak"
+MythicPlus.Dungeon.38 = "599,Halls of Stone"
+MythicPlus.Dungeon.39 = "602,Halls of Lightning"
+MythicPlus.Dungeon.40 = "578,The Oculus"
+MythicPlus.Dungeon.41 = "575,Utgarde Pinnacle"
+MythicPlus.Dungeon.42 = "595,Culling of Stratholme"
+MythicPlus.Dungeon.43 = "632,Forge of Souls"
+MythicPlus.Dungeon.44 = "658,Pit of Saron"
+MythicPlus.Dungeon.45 = "668,Halls of Reflection"
